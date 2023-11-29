@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int horasTrabalhadas, totalDescontos;
+    float salarioHora, salarioBruto, salarioLiquido;
+
+    printf("Digite o número de horas trabalhadas, salário-hora e total de descontos:\n");
+    scanf("%d %f %d", &horasTrabalhadas, &salarioHora, &totalDescontos);
+
+    salarioBruto = horasTrabalhadas * salarioHora;
+    salarioLiquido = salarioBruto - totalDescontos;
+
+    printf("Salário Bruto: %.2f\n", salarioBruto);
+    printf("Salário Líquido: %.2f\n", salarioLiquido);
+
+    return 0;
+}
